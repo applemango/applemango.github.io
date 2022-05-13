@@ -1,0 +1,81 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body > div > div::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 430px;
+    height: 530px;
+    border-radius: 15px;
+    transform: rotate(4deg);
+    transform-origin: 40% 70%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #fa709a 0%, #fee140 100%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body > div > div:hover::before {
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+body > div > div > div {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    margin: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+body > div > div > div {
+    position: relative;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    color: rgb(255, 255, 255);
+}
+body > div {
+    margin: 100px auto;
+    width: 455px;
+    position: relative;
+    /*top: calc(50% - 250px);*/
+}
+div > div > div > div:first-child:before {
+    content: "applemango";
+    font-family: "Meiryo";
+    font-size: 32px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div > div:hover > div > div:first-child:before {
+    background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div > div > div > div:nth-child(2):before {
+    content: '色々してる';
+    font-family: "Meiryo";
+}
+div > div > div > div:nth-child(3):before {
+    content: 'https://github.com/applemango';
+    font-family: "Meiryo";
+}
+div > div > div > div:nth-child(4):before {
+    content: '(divしか使えない+要素名しか使えない縛り(最低限の物は除く)してるからリンクは踏めないしtextも選択できないよ(chrome推奨';
+    font-family: "Meiryo";
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+div > div > div:hover > div:nth-child(4):before {
+    opacity: 1;
+}
