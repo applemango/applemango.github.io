@@ -1,8 +1,11 @@
+m {
+    display: block;
+}
 html {
     width: 100%;
     height: 100%;
 }
-body > div:first-child > div:first-child:before {
+body > m:first-child > m:first-child:before {
     content: '';
     display: block;
     position: absolute;
@@ -16,10 +19,10 @@ body > div:first-child > div:first-child:before {
     background-image: linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-body > div:first-child > div:first-child:hover::before {
+body > m:first-child > m:first-child:hover::before {
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
-body > div:first-child > div:first-child > div:first-child {
+body > m:first-child > m:first-child > m:first-child {
     position: relative;
     z-index: 2;
     width: 400px;
@@ -29,7 +32,7 @@ body > div:first-child > div:first-child > div:first-child {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
 }
-body > div:first-child > div:first-child > div:first-child {
+body > m:first-child > m:first-child > m:first-child {
     position: relative;
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.45);
@@ -42,14 +45,14 @@ body > div:first-child > div:first-child > div:first-child {
     -webkit-border-radius: 12px;
     color: rgb(255, 255, 255);
 }
-body > div:first-child {
+body > m:first-child {
     margin: 100px auto;
     width: 455px;
     position: relative;
     /*top: calc(50% - 250px);*/
 }
 /* ---- text ---- */
-body > div:first-child > div:first-child > div:first-child > div:first-child:before {
+body > m:first-child > m:first-child > m:first-child > m:first-child:before {
     content: "applemango";
     font-family: "Meiryo";
     font-size: 32px;
@@ -58,42 +61,42 @@ body > div:first-child > div:first-child > div:first-child > div:first-child:bef
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body > div:first-child > div:first-child:hover > div:first-child > div:first-child:before {
+body > m:first-child > m:first-child:hover > m:first-child > m:first-child:before {
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 /*
-body > div:first-child > div:first-child > div:first-child > div:nth-child(2):before {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(2):before {
     content: '色々してる';
     font-family: "Meiryo";
     
 }
 */
 /*
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3):before {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3):before {
     content: 'https://github.com/applemango';
     font-family: "Meiryo";
     transition: opacity 0.5s;
     opacity: 0;
 }
-body > div:first-child > div:first-child > div:first-child:hover > div:nth-child(3):before {
+body > m:first-child > m:first-child > m:first-child:hover > m:nth-child(3):before {
     opacity: 1;
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(4):before {
-    content: '(divしか使えない+要素名しか使えない縛り(最低限の物は除く)してるからリンクは踏めないしtextも選択できないよ(chrome推奨';
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4):before {
+    content: '(mしか使えない+要素名しか使えない縛り(最低限の物は除く)してるからリンクは踏めないしtextも選択できないよ(chrome推奨';
     font-family: "Meiryo";
     transition: opacity 0.5s;
     opacity: 0;
 }
-body > div:first-child > div:first-child > div:first-child:hover > div:nth-child(4):before {
+body > m:first-child > m:first-child > m:first-child:hover > m:nth-child(4):before {
     opacity: 1;
 }
 */
 
 /* ---- background ---- */
-/*body > div:first-child > div:first-child > div:nth-child(2) > div:first-child*/
-body > div:first-child > div:nth-child(2) > div:first-child {
+/*body > m:first-child > m:first-child > m:nth-child(2) > m:first-child*/
+body > m:first-child > m:nth-child(2) > m:first-child {
     position: fixed;
     top: calc(50% - 50px);
     right: 50%;
@@ -103,10 +106,10 @@ body > div:first-child > div:nth-child(2) > div:first-child {
     filter: blur(30px);
     background: radial-gradient(circle at 50% 50%, #fa709a, rgba(255, 255, 255, 0));
 }
-body > div:first-child:hover > div:nth-child(2) > div:first-child {
+body > m:first-child:hover > m:nth-child(2) > m:first-child {
     background: radial-gradient(circle at 50% 50%, #4158D0, rgba(255, 255, 255, 0));
 }
-body > div:first-child > div:nth-child(2) > div:nth-child(2) {
+body > m:first-child > m:nth-child(2) > m:nth-child(2) {
     position: fixed;
     bottom: calc(50% + 100px);
     left: 50%;
@@ -116,13 +119,13 @@ body > div:first-child > div:nth-child(2) > div:nth-child(2) {
     filter: blur(30px);
     background: radial-gradient(circle at 50% 50%, #fee140, rgba(255, 255, 255, 0));
 }
-body > div:first-child:hover > div:nth-child(2) > div:nth-child(2) {
+body > m:first-child:hover > m:nth-child(2) > m:nth-child(2) {
     background: radial-gradient(circle at 50% 50%, #FFCC70, rgba(255, 255, 255, 0));
 }
 
 
 /* ---- lang ---- */
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) {
     width: calc(100% - 20px);
 
     /*
@@ -151,18 +154,18 @@ body > div:first-child > div:first-child > div:first-child > div:nth-child(3) {
     padding: 10px;
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:first-child::before {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:first-child::before {
     content: "Used Language";
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m {
     margin-right: 10px;
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
@@ -170,65 +173,51 @@ body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > 
     -webkit-text-fill-color: transparent;
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div::before {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m::before {
     content: "●";
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:first-child::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:first-child::after {
     content: "JavaScript";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(2)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(2)::after {
     content: "HTML / CSS";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(3)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(3)::after {
     content: "Python";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(4)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(4)::after {
     content: "C / C++";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(5)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(5)::after {
     content: "C#";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(6)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(6)::after {
     content: "Java";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(7)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(7)::after {
     content: "Ruby";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(8)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(8)::after {
     content: "Clojure";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(9)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(9)::after {
     content: "Perl";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(10)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(10)::after {
     content: "Go";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(11)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(11)::after {
     content: "Rust";
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(12)::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-child(2) > m:nth-child(12)::after {
     content: "Racket";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body > div:first-child > div:first-child > div:first-child > div:nth-child(4) {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4) {
     width: calc(100% - 20px);
     height: 100px;
     margin-top: 10px;
@@ -247,18 +236,18 @@ body > div:first-child > div:first-child > div:first-child > div:nth-child(4) {
     padding: 10px;
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:first-child::before {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:first-child::before {
     content: "Used Framework";
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) > div{
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:nth-child(2) > m{
     margin-right: 10px;
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
@@ -266,13 +255,13 @@ body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > 
     -webkit-text-fill-color: transparent;
 }
 
-body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) > div::before {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:nth-child(2) > m::before {
     content: "●";
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) > div:first-child::after {
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:nth-child(2) > m:first-child::after {
     content: "Ruby on Rails";
 }
