@@ -45,6 +45,8 @@ body > m:first-child > m:first-child > m:first-child {
     -webkit-border-radius: 12px;
     color: rgb(255, 255, 255);
 }
+
+
 body > m:first-child {
     margin: 100px auto;
     width: 455px;
@@ -52,7 +54,26 @@ body > m:first-child {
     /*top: calc(50% - 250px);*/
 }
 /* ---- text ---- */
-body > m:first-child > m:first-child > m:first-child > m:first-child:before {
+body > m:first-child > m:first-child > m:first-child > m:first-child {
+    width: calc(100% - 20px);
+    /*height: calc(500px - (118px + 122px + 42px));*/
+    margin-bottom: 10px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    color: rgba(255, 255, 255, 0.45);
+
+    padding: 10px;
+    /*margin-bottom: 210px;*/
+}
+
+body > m:first-child > m:first-child > m:first-child > m:first-child > m:first-child::before {
     content: "applemango";
     font-family: "Meiryo";
     font-size: 32px;
@@ -61,10 +82,25 @@ body > m:first-child > m:first-child > m:first-child > m:first-child:before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body > m:first-child > m:first-child:hover > m:first-child > m:first-child:before {
+body > m:first-child > m:first-child:hover > m:first-child > m:first-child > m:first-child::before {
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+body > m:first-child > m:first-child > m:first-child > m:first-child > m:nth-child(2) {
+    display: inherit;
+}
+body > m:first-child > m:first-child > m:first-child > m:first-child > m:nth-child(2) > m {
+    font-family: "Meiryo";
+    font-size: 16px;
+    background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body > m:first-child > m:first-child > m:first-child > m:first-child > m:nth-child(2) > m:nth-child(1)::after {
+    content: "いろいろしてる";
 }
 /*
 body > m:first-child > m:first-child > m:first-child > m:nth-child(2):before {
@@ -217,9 +253,22 @@ body > m:first-child > m:first-child > m:first-child > m:nth-child(3) > m:nth-ch
     content: "Racket";
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body > m:first-child > m:first-child > m:first-child > m:nth-child(4) {
     width: calc(100% - 20px);
-    height: 100px;
     margin-top: 10px;
 
     background-color: rgba(255, 255, 255, 0.15);
@@ -264,4 +313,7 @@ body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:nth-ch
 }
 body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:nth-child(2) > m:first-child::after {
     content: "Ruby on Rails";
+}
+body > m:first-child > m:first-child > m:first-child > m:nth-child(4) > m:nth-child(2) > m:nth-child(2)::after {
+    content: "Flask";
 }
