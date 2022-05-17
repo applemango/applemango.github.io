@@ -1,11 +1,8 @@
-applemango {
-    display: block;
-}
 html {
     width: 100%;
     height: 100%;
 }
-body > applemango:first-child > applemango:first-child:before {
+body > div:first-child > div:first-child:before {
     content: '';
     display: block;
     position: absolute;
@@ -19,10 +16,10 @@ body > applemango:first-child > applemango:first-child:before {
     background-image: linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-body > applemango:first-child > applemango:first-child:hover::before {
+body > div:first-child > div:first-child:hover::before {
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child {
+body > div:first-child > div:first-child > div:first-child {
     position: relative;
     z-index: 2;
     width: 400px;
@@ -32,7 +29,7 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child {
+body > div:first-child > div:first-child > div:first-child {
     position: relative;
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.45);
@@ -47,14 +44,14 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
 }
 
 
-body > applemango:first-child {
+body > div:first-child {
     margin: 100px auto;
     width: 455px;
     position: relative;
     /*top: calc(50% - 250px);*/
 }
 /* ---- text ---- */
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:first-child {
+body > div:first-child > div:first-child > div:first-child > div:first-child {
     width: calc(100% - 20px);
     /*height: calc(500px - (118px + 122px + 42px));*/
     margin-bottom: 10px;
@@ -73,7 +70,7 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     /*margin-bottom: 210px;*/
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:first-child > applemango:first-child::before {
+body > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child::before {
     content: "applemango";
     font-family: "Meiryo";
     font-size: 32px;
@@ -82,16 +79,16 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body > applemango:first-child > applemango:first-child:hover > applemango:first-child > applemango:first-child > applemango:first-child::before {
+body > div:first-child > div:first-child:hover > div:first-child > div:first-child > div:first-child::before {
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(2) {
+body > div:first-child > div:first-child > div:first-child > div:first-child > div:nth-child(2) {
     display: inherit;
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(2) > applemango {
+body > div:first-child > div:first-child > div:first-child > div:first-child > div:nth-child(2) > div {
     font-family: "Meiryo";
     font-size: 16px;
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
@@ -99,40 +96,40 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     -webkit-text-fill-color: transparent;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(2) > applemango:nth-child(1)::after {
+body > div:first-child > div:first-child > div:first-child > div:first-child > div:nth-child(2) > div:nth-child(1)::after {
     content: "いろいろしてる";
 }
 /*
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(2):before {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(2):before {
     content: '色々してる';
     font-family: "Meiryo";
     
 }
 */
 /*
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3):before {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3):before {
     content: 'https://github.com/applemango';
     font-family: "Meiryo";
     transition: opacity 0.5s;
     opacity: 0;
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child:hover > applemango:nth-child(3):before {
+body > div:first-child > div:first-child > div:first-child:hover > div:nth-child(3):before {
     opacity: 1;
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4):before {
-    content: '(applemangoしか使えない+要素名しか使えない縛り(最低限の物は除く)してるからリンクは踏めないしtextも選択できないよ(chrome推奨';
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4):before {
+    content: '(divしか使えない+要素名しか使えない縛り(最低限の物は除く)してるからリンクは踏めないしtextも選択できないよ(chrome推奨';
     font-family: "Meiryo";
     transition: opacity 0.5s;
     opacity: 0;
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child:hover > applemango:nth-child(4):before {
+body > div:first-child > div:first-child > div:first-child:hover > div:nth-child(4):before {
     opacity: 1;
 }
 */
 
 /* ---- background ---- */
-/*body > applemango:first-child > applemango:first-child > applemango:nth-child(2) > applemango:first-child*/
-body > applemango:first-child > applemango:nth-child(2) > applemango:first-child {
+/*body > div:first-child > div:first-child > div:nth-child(2) > div:first-child*/
+body > div:first-child > div:nth-child(2) > div:first-child {
     position: fixed;
     top: calc(50% - 50px);
     right: 50%;
@@ -142,10 +139,10 @@ body > applemango:first-child > applemango:nth-child(2) > applemango:first-child
     filter: blur(30px);
     background: radial-gradient(circle at 50% 50%, #fa709a, rgba(255, 255, 255, 0));
 }
-body > applemango:first-child:hover > applemango:nth-child(2) > applemango:first-child {
+body > div:first-child:hover > div:nth-child(2) > div:first-child {
     background: radial-gradient(circle at 50% 50%, #4158D0, rgba(255, 255, 255, 0));
 }
-body > applemango:first-child > applemango:nth-child(2) > applemango:nth-child(2) {
+body > div:first-child > div:nth-child(2) > div:nth-child(2) {
     position: fixed;
     bottom: calc(50% + 100px);
     left: 50%;
@@ -155,13 +152,13 @@ body > applemango:first-child > applemango:nth-child(2) > applemango:nth-child(2
     filter: blur(30px);
     background: radial-gradient(circle at 50% 50%, #fee140, rgba(255, 255, 255, 0));
 }
-body > applemango:first-child:hover > applemango:nth-child(2) > applemango:nth-child(2) {
+body > div:first-child:hover > div:nth-child(2) > div:nth-child(2) {
     background: radial-gradient(circle at 50% 50%, #FFCC70, rgba(255, 255, 255, 0));
 }
 
 
 /* ---- lang ---- */
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) {
     width: calc(100% - 20px);
 
     /*
@@ -190,18 +187,18 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     padding: 10px;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:first-child::before {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:first-child::before {
     content: "Used Language";
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div {
     margin-right: 10px;
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
@@ -209,47 +206,47 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     -webkit-text-fill-color: transparent;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango::before {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div::before {
     content: "●";
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:first-child::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:first-child::after {
     content: "JavaScript";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(2)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(2)::after {
     content: "HTML / CSS";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(3)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(3)::after {
     content: "Python";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(4)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(4)::after {
     content: "C / C++";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(5)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(5)::after {
     content: "C#";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(6)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(6)::after {
     content: "Java";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(7)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(7)::after {
     content: "Ruby";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(8)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(8)::after {
     content: "Clojure";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(9)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(9)::after {
     content: "Perl";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(10)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(10)::after {
     content: "Go";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(11)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(11)::after {
     content: "Rust";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(3) > applemango:nth-child(2) > applemango:nth-child(12)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div:nth-child(12)::after {
     content: "Racket";
 }
 
@@ -267,7 +264,7 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
 
 
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4) {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4) {
     width: calc(100% - 20px);
     margin-top: 10px;
 
@@ -285,18 +282,18 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     padding: 10px;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4) > applemango:first-child::before {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:first-child::before {
     content: "Used Framework";
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4) > applemango:nth-child(2) {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4) > applemango:nth-child(2) > applemango{
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) > div{
     margin-right: 10px;
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
@@ -304,16 +301,16 @@ body > applemango:first-child > applemango:first-child > applemango:first-child 
     -webkit-text-fill-color: transparent;
 }
 
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4) > applemango:nth-child(2) > applemango::before {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) > div::before {
     content: "●";
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background: -webkit-linear-gradient(43deg, #fa709a 0%, #fee140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4) > applemango:nth-child(2) > applemango:first-child::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) > div:first-child::after {
     content: "Ruby on Rails";
 }
-body > applemango:first-child > applemango:first-child > applemango:first-child > applemango:nth-child(4) > applemango:nth-child(2) > applemango:nth-child(2)::after {
+body > div:first-child > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(2) > div:nth-child(2)::after {
     content: "Flask";
 }
