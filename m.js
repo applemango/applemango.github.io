@@ -4,4 +4,5 @@ window.onload = function() {
     <link rel="stylesheet" href="s.css">
     <title>Hello</title>
     `;
+    document.querySelector("html").setAttribute("lang","ja-jp")
 }
