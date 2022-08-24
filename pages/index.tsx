@@ -28,7 +28,7 @@ const Home: NextPage = () => {
                                 "TypeScript":25
                                 ,"Python":20
                                 ,"JavaScript":15
-                                ,"Sass":15
+                                ,"SCSS":15
                                 ,"CSS":5
                                 ,"Other":20
                             }
