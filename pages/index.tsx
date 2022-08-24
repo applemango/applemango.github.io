@@ -13,8 +13,8 @@ const Home: NextPage = () => {
             <div className={styles.main_}>
                 <p className={styles.title_path}><a className={`${animations.underline} ${animations.simple}`} href="https://github.com/applemango">applemango</a> / README.md</p>
                 <h1>Hello! I&apos;m AppleMango</h1>
-                <p>色々してる, 最近は主にNext.jsやFlaskを使ってWeb Appを作っています</p>
-                <p>稀にMLやDLをしてる</p>
+                <p>色々, 最近は主にNext.jsやFlaskを使ってWeb Appを作っています</p>
+                <p>稀にMLやDLをしている</p>
                 <div className={styles.langs}>
                     <Languages
                         title={"Most Used Languages"}
