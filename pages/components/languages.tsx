@@ -9,16 +9,18 @@ type Props = {
     data: any
     ,title?: string
     ,link?: boolean
+    ,className?: any
+    ,style?: any
 }
-const Languages = ({ data, title, link = true }:Props) => {
+const Languages = ({ data, title, link = true, className, style }:Props) => {
     return (
-        <div className={ styles.main }>
-            { title && (
-                <h2 className={styles.title}>{ title }</h2>
-            )}
-            <div className={ styles.main_ }>
-                <ProgressBar data={data} />
-                <div className={ styles.langs }>
+        <div className={` ${styles.main} ${className} `} style={style}>
+            <div className={` ${styles.main_} `}>
+                { title && (
+                    <h2 className={styles.title}>{ title }</h2>
+                )}
+                <ProgressBar data={data}/>
+                <div className={` ${styles.langs} `}>
                     { data &&
                         Object.keys(data).map((l:string, index:number) => (
                             <div
@@ -29,16 +31,16 @@ const Languages = ({ data, title, link = true }:Props) => {
                                     <div
                                         className={ styles.lang_color }
                                         style={{
-                                            backgroundColor: getColor(l)
+                                            backgroundColor: Array.isArray(data[l]) ? data[l][1] : getColor(l)
                                         }}
                                     />
                                 </div>
                                 { link ? (
                                     <a href={`https://github.com/applemango?tab=repositories&q=&type=&language=${l}&sort=`} className={` ${ styles.lang_name} ${ animations.underline } ${ animations.simple } `}>{l}</a>
                                 ):(
-                                    <a className={` ${link && styles.lang_name} `}>{l}</a>
+                                    <a className={` ${ styles.lang_name } `}>{l}</a>
                                 )}
-                                <p className={ styles.lang_number }>{`${data[l]}%`}</p>
+                                <p className={ styles.lang_number }>{`${Array.isArray(data[l]) ? data[l][0] : data[l]}%`}</p>
                             </div>
                         ))
                     }

@@ -15,19 +15,42 @@ const Home: NextPage = () => {
                 <h1>Hello! I&apos;m AppleMango</h1>
                 <p>色々してる, 最近は主にNext.jsやFlaskを使ってWeb Appを作っています</p>
                 <p>稀にMLやDLをしてる</p>
-                <Languages
-                    title={"Most Used Languages"}
-                    data={
-                        {
-                            "TypeScript":25
-                            ,"Python":20
-                            ,"JavaScript":15
-                            ,"Sass":15
-                            ,"CSS":5
-                            ,"Other":20
+                <div className={styles.langs}>
+                    <Languages
+                        title={"Most Used Languages"}
+                        className={styles.lang}
+                        style={{
+                            width: '60%'
+                            ,marginRight: 15
+                        }}
+                        data={
+                            {
+                                "TypeScript":25
+                                ,"Python":20
+                                ,"JavaScript":15
+                                ,"Sass":15
+                                ,"CSS":5
+                                ,"Other":20
+                            }
                         }
-                    }
-                />
+                    />
+                    <Languages
+                        title={"Most Used Framework"}
+                        link={false}
+                        className={styles.lang}
+                        style={{
+                            width: '40%'
+                        }}
+                        data={
+                            {
+                                "Next.js":[70,"#2c3e50"]
+                                ,"Flask":[15,"#3572A5"]
+                                ,"React":[5,"#3178c6"]
+                                ,"Other":10
+                            }
+                        }
+                    />
+                </div>
             </div>
         </div>
     )

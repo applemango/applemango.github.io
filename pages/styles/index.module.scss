@@ -25,3 +25,15 @@
     font-size: 12px;
     font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
 }
+
+.langs {
+    display: flex;
+}
+@media (max-width: 750px) {
+    .langs {
+        display: block;
+    }
+    .lang {
+        width: 100% !important;
+    }
+}
