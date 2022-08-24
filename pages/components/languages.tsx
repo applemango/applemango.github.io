@@ -38,7 +38,7 @@ const Languages = ({ data, title, link = true, className, style }:Props) => {
                                 { link ? (
                                     <a href={`https://github.com/applemango?tab=repositories&q=&type=&language=${l}&sort=`} className={` ${ styles.lang_name} ${ animations.underline } ${ animations.simple } `}>{l}</a>
                                 ):(
-                                    <a className={` ${ styles.lang_name } `}>{l}</a>
+                                    <p className={` ${ styles.lang_name } `}>{l}</p>
                                 )}
                                 <p className={ styles.lang_number }>{`${Array.isArray(data[l]) ? data[l][0] : data[l]}%`}</p>
                             </div>
