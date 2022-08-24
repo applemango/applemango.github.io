@@ -1,0 +1,50 @@
+.underline {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+.underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #E91E63;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .4s,-webkit-transform .4s;
+}
+.underline:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1)
+}
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #FFC107;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .6s,-webkit-transform .6s;
+    z-index: 10;
+}
+.underline:hover::after {
+    width: 80%;
+    transform-origin: bottom left;
+    transform: scaleX(1)
+}
+.underline.simple {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+.underline.simple::before {
+    background: #000;
+}
+.underline.simple::after {
+    content: none;
+}
