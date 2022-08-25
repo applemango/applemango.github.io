@@ -18,3 +18,34 @@
         margin-right: 0;
     }
 }
+
+.main {
+    position: relative;
+}
+.main::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    z-index: 10;
+    width: calc(100% - 6px);
+    height: 8px;
+    //border-radius: 0px 8px 8px 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: scaleX(1);
+    visibility: hidden;
+    pointer-events: none;
+    background-color: #ededed;
+    transform-origin: bottom right;
+    animation: show cubic-bezier(0.22, 1, 0.36, 1) 1s 1 alternate none running;
+}
+@keyframes show {
+    0% {
+        transform: scaleX(1);
+        visibility: inherit;
+    }
+    100% {
+        transform: scaleX(0);
+        visibility: inherit;
+    }
+}
