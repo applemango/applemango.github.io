@@ -19,7 +19,7 @@ const MiniRepo = ({ title, description, language, className, style }:Props) => {
                 <RepoIcon size={16} />
                 <a href={`https://github.com/applemango/${title}`} className={ styles.title_ }>{title}</a>
                 <div className={ styles.public }>
-                    <p>public</p>
+                    <p>Public</p>
                 </div>
             </div>
             <div className={ styles.description }>
