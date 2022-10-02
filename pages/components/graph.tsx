@@ -32,13 +32,14 @@ const Graph = ({
         ,{x:0.1,y:0.8,name:"Tauri",color:"#2ecc71"}
         ,{x:0.8,y:0.8, name:"aaaa"}
     ]*/
+    if(!width || !height || !labelY || !labelX || !rows || !cols || !data) return <div />
     return <div style={{display:"flex"}}>
         <div style={{height:height,transform:"translateX(-24px)",display:"flex",alignItems:"center"}}>
             <p style={{transform: "rotate(-90deg);",width:"fit-content",fontSize:18,fontWeight:500}}>{labelY}</p>
         </div>
         <div>
             <div className={styles.main} style={{width: width, height: height}}>
-                { rows.map((row:any, i:number) => {
+                { rows && rows.map((row:any, i:number) => {
                     return <div key={i} style={{
                         transform: `translateX(${ (width / (rows.length - 1)) * i}px)`
                         ,height:height
@@ -48,7 +49,7 @@ const Graph = ({
                         </div>
                     </div>
                 })}
-                { cols.map((col:any, i:number) => {
+                { cols && cols.map((col:any, i:number) => {
                     return <div key={i} style={{
                         transform: `translateY(${ height - (height / (cols.length - 1)) * i}px)`
                         ,width:width
@@ -58,7 +59,7 @@ const Graph = ({
                         </div>
                     </div>
                 })}
-                { data.map((data:any, i:number) => {
+                { data && data.map((data:any, i:number) => {
                     return <div key={i} style={{
                         transform: `translateX(${ width * data.x }px) translateY(${ height * (1 - data.y) }px)`
                     }} className={`${styles.positionP} ${nowHover && nowHoverData != i ? styles.disabled : ""}`}>
