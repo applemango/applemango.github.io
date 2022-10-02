@@ -1,0 +1,137 @@
+.main {
+    position: relative;
+}
+
+.bar_row {
+    position: absolute;
+    width: 1px;
+    background-color: #27232560;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 6px;
+        background-color: #27232560;
+        bottom: -6px;
+    }
+}
+.bar_row_data {
+    position: absolute;
+    bottom: -22px;
+    left: -24px;
+    p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+.bar_col {
+    position: absolute;
+    height: 1px;
+    background-color: #27232560;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 1px;
+        background-color: #27232560;
+        bottom: 0px;
+        left: -4px;
+    }
+}
+.bar_col_data {
+    position: absolute;
+    bottom: -6px;
+    left: -12px;
+    left: -24px;
+    p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+
+.positionP {
+    position: absolute;
+    transition: all 0.5s ease;
+    div div:hover {
+        right: 4px;
+        width: 24px;
+        height: 24px;
+        border: 4px solid #fff;
+        outline: 3px solid #272325;
+        & ~ p {
+            background-color: #272325;
+            color: antiquewhite;
+            right: 0;
+            opacity: 1;
+        }
+    }
+    &.disabled {
+        opacity: 0.3;
+    }
+}
+.positionP_data {
+    display: flex;
+    align-items: center;
+    div {
+        transition: all 0.3s ease;
+        position: relative;
+        top: 1px;
+        width: 16px;
+        height: 16px;
+        background-color: #272325;
+        border-radius: 100%;
+        margin-right: 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    p {
+        opacity: 1;
+        position: relative;
+        transition: all 0.5s ease;
+        padding: 2px 8px;
+        border-radius: 4px;
+        right: 4px;
+        cursor: default;
+        pointer-events: none;
+    }
+}
+
+.positionP_hover_line {
+    > div {
+        opacity: 0;
+        background-color: #272325;
+        width: 3px;
+        height: 3px;
+    }
+    &.active > div {
+        opacity: 1;
+    }
+}
+
+p.positionP_hover_y {
+    position: absolute;
+    left: -22px;
+    bottom: -12px;
+    background-color: #272325;
+    color: antiquewhite;
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+p.positionP_hover_x {
+    position: absolute;
+    bottom: -20px;
+    left: -16px;
+    background-color: #272325;
+    color: antiquewhite;
+    border-radius: 4px;
+    padding: 2px 8px;
+    white-space: nowrap;
+}
+
+.labelX {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 24px;
+}
