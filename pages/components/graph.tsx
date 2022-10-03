@@ -82,7 +82,7 @@ const Graph = ({
                         <p className={styles.positionP_hover_y}>{data[nowHoverData].labelY ? data[nowHoverData].labelY : data[nowHoverData].y}</p>
                     </div>
                     <div style={{
-                        transform: `translateX(${ width * data[nowHoverData].x + 7 }px) translateY(${ height * (1 - data[nowHoverData].y) + 22}px)`
+                        transform: `translateX(${ width * data[nowHoverData].x + 7 }px) translateY(${ height * (1 - data[nowHoverData].y) + 24}px)`
                         ,height: height * data[nowHoverData].y - 24
                     }}>
                         <p className={styles.positionP_hover_x}>{data[nowHoverData].labelX ? data[nowHoverData].labelX : data[nowHoverData].x}</p>

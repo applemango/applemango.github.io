@@ -50,8 +50,10 @@
 }
 
 .positionP {
+    user-select: none;
+    pointer-events: none;
     position: absolute;
-    transition: all 0.5s ease;
+    z-index: 10;
     div div:hover {
         right: 4px;
         width: 24px;
@@ -66,14 +68,21 @@
         }
     }
     &.disabled {
+        z-index: 1;
         opacity: 0.3;
     }
 }
 .positionP_data {
+    user-select: none;
+    pointer-events: none;
     display: flex;
     align-items: center;
     div {
-        transition: all 0.3s ease;
+        //transition: all 0.3s ease;
+        outline: 3px solid transparent;
+        border: 4px solid transparent;
+        user-select: auto;
+        pointer-events: auto;
         position: relative;
         top: 1px;
         width: 16px;
@@ -97,11 +106,14 @@
 }
 
 .positionP_hover_line {
+    user-select: none;
+    pointer-events: none;
     > div {
         opacity: 0;
         background-color: #272325;
         width: 3px;
         height: 3px;
+        //transition: opacity 0.5s ease;
     }
     &.active > div {
         opacity: 1;
@@ -116,6 +128,7 @@ p.positionP_hover_y {
     color: antiquewhite;
     border-radius: 4px;
     padding: 2px 8px;
+    white-space: nowrap;
 }
 p.positionP_hover_x {
     position: absolute;

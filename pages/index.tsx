@@ -4,15 +4,12 @@ import type { NextPage } from 'next'
 import Heads from "./components/heads"
 import Languages from "./components/languages"
 import MiniRepo from "./components/minirepo"
+import Histories from "./components/history"
+import Graph from "./components/graph"
 
 import styles from "./styles/index.module.scss"
 import animations from "./components/styles/animations.module.scss"
 import useWindowSize from "../lib/hook/useWindowSize"
-import { InfoIcon, RepoIcon } from "@primer/octicons-react"
-import { getColor } from "../lib/languagesColor"
-import History from "./components/history"
-import Histories from "./components/history"
-import Graph from "./components/graph"
 
 const Home: NextPage = () => {
     const [section, setSection] = useState(0)
@@ -164,182 +161,28 @@ const Home: NextPage = () => {
                                 labelX={"Start"}
                                 labelY={"Use"}
                                 data={[
-                                    {
-                                        x:0.25
-                                        ,y:1
-                                        ,labelX:"Jan 2022"
-                                        ,labelY:"very high"
-                                        ,name:"Python"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.09
-                                        ,y:0.6
-                                        ,labelX:"23 oct 2021"
-                                        ,labelY:"medium"
-                                        ,name:"Scratch"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.43
-                                        ,y:0.44
-                                        ,labelX:"Mar 2022"
-                                        ,labelY:"normal"
-                                        ,name:"JavaScript"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.75
-                                        ,y:1
-                                        ,labelX:"Jul 2022"
-                                        ,labelY:"very high"
-                                        ,name:"TypeScript"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.35
-                                        ,y:0.2
-                                        ,labelX:"Feb 2022"
-                                        ,labelY:"low"
-                                        ,name:"HTML"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.38
-                                        ,y:0.35
-                                        ,labelX:"Feb 2022"
-                                        ,labelY:"low"
-                                        ,name:"CSS"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.8
-                                        ,y:0.8
-                                        ,labelX:"July 2022"
-                                        ,labelY:"high"
-                                        ,name:"Sass"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.67
-                                        ,y:0.15
-                                        ,labelX:"June 2022"
-                                        ,labelY:"low"
-                                        ,name:"c"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.69
-                                        ,y:0.2
-                                        ,labelX:"June 2022"
-                                        ,labelY:"low"
-                                        ,name:"go"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.72
-                                        ,y:0.3
-                                        ,labelX:"June 2022"
-                                        ,labelY:"low"
-                                        ,name:"rust"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.56
-                                        ,y:0.56
-                                        ,labelX:"Apr 2022"
-                                        ,labelY:"normal"
-                                        ,name:"ruby"
-                                        ,color:"#f1c40f"
-                                    }
-                                    ,{
-                                        x:0.75
-                                        ,y:0.59
-                                        ,labelX:"Jul 2022"
-                                        ,labelY:"normal"
-                                        ,name:"react"
-                                        ,color:"#fd79a8"
-                                    }
-                                    ,{
-                                        x:0.78
-                                        ,y:0.9
-                                        ,labelX:"Jul 2022"
-                                        ,labelY:"normal"
-                                        ,name:"next.js"
-                                        ,color:"#8e44ad"
-                                    }
-                                    ,{
-                                        x:0.66
-                                        ,y:0.92
-                                        ,labelX:"Jul 2022"
-                                        ,labelY:"very high"
-                                        ,name:"Flask"
-                                        ,color:"#8e44ad"
-                                    }
-                                    ,{
-                                        x:0.84
-                                        ,y:0.12
-                                        ,labelX:"Aug 2022"
-                                        ,labelY:"very low"
-                                        ,name:"Express"
-                                        ,color:"#8e44ad"
-                                    }
-                                    ,{
-                                        x:0.86
-                                        ,y:0.18
-                                        ,labelX:"Aug 2022"
-                                        ,labelY:"very low"
-                                        ,name:"Nest"
-                                        ,color:"#8e44ad"
-                                    }
-                                    ,{
-                                        x:0.63
-                                        ,y:0.4
-                                        ,labelX:"May 2022"
-                                        ,labelY:"low"
-                                        ,name:"Ruby on rails"
-                                        ,color:"#8e44ad"
-                                    }
-                                    ,{
-                                        x:0.56
-                                        ,y:0.25
-                                        ,labelX:"May 2022"
-                                        ,labelY:"low"
-                                        ,name:"Django"
-                                        ,color:"#8e44ad"
-                                    }
-                                    ,{
-                                        x:0.86
-                                        ,y:0.6
-                                        ,labelX:"Aug 2022"
-                                        ,labelY:"normal"
-                                        ,name:"ML"
-                                        ,color:"#1abc9c"
-                                    }
-                                    ,{
-                                        x:0.95
-                                        ,y:0.5
-                                        ,labelX:"Sep 2022"
-                                        ,labelY:"normal"
-                                        ,name:"DL"
-                                        ,color:"#1abc9c"
-                                    }
-                                    ,{
-                                        x:0.5
-                                        ,y:0.12
-                                        ,labelX:"Apr 2022"
-                                        ,labelY:"very low"
-                                        ,name:"unity"
-                                        ,color:"#3498db"
-                                    }
-                                    ,{
-                                        x:0.46
-                                        ,y:0.19
-                                        ,labelX:"Apr 2022"
-                                        ,labelY:"very low"
-                                        ,name:"unreal engine"
-                                        ,color:"#3498db"
-                                    }
+                                     {x:0.25,y:1.00,labelX:"Jan 2022",   labelY:"very high",name:"Python",       color:"#f1c40f"}
+                                    ,{x:0.09,y:0.60,labelX:"23 oct 2021",labelY:"medium",   name:"Scratch",      color:"#f1c40f"}
+                                    ,{x:0.43,y:0.44,labelX:"Mar 2022",   labelY:"normal",   name:"JavaScript",   color:"#f1c40f"}
+                                    ,{x:0.75,y:1.00,labelX:"Jul 2022",   labelY:"very high",name:"TypeScript",   color:"#f1c40f"}
+                                    ,{x:0.35,y:0.20,labelX:"Feb 2022",   labelY:"low",      name:"HTML",         color:"#f1c40f"}
+                                    ,{x:0.38,y:0.35,labelX:"Feb 2022",   labelY:"low",      name:"CSS",          color:"#f1c40f"}
+                                    ,{x:0.80,y:0.80,labelX:"July 2022",  labelY:"high",     name:"Sass",         color:"#f1c40f"}
+                                    ,{x:0.67,y:0.15,labelX:"June 2022",  labelY:"low",      name:"c",            color:"#f1c40f"}
+                                    ,{x:0.69,y:0.20,labelX:"June 2022",  labelY:"low",      name:"go",           color:"#f1c40f"}
+                                    ,{x:0.72,y:0.30,labelX:"June 2022",  labelY:"low",      name:"rust",         color:"#f1c40f"}
+                                    ,{x:0.56,y:0.56,labelX:"Apr 2022",   labelY:"normal",   name:"ruby",         color:"#f1c40f"}
+                                    ,{x:0.75,y:0.59,labelX:"Jul 2022",   labelY:"normal",   name:"react",        color:"#fd79a8"}
+                                    ,{x:0.78,y:0.90,labelX:"Jul 2022",   labelY:"very high",name:"next.js",      color:"#8e44ad"}
+                                    ,{x:0.66,y:0.92,labelX:"Jul 2022",   labelY:"very high",name:"Flask",        color:"#8e44ad"}
+                                    ,{x:0.84,y:0.12,labelX:"Aug 2022",   labelY:"very low", name:"Express",      color:"#8e44ad"}
+                                    ,{x:0.86,y:0.18,labelX:"Aug 2022",   labelY:"very low", name:"Nest",         color:"#8e44ad"}
+                                    ,{x:0.63,y:0.40,labelX:"May 2022",   labelY:"low",      name:"Ruby on rails",color:"#8e44ad"}
+                                    ,{x:0.56,y:0.25,labelX:"May 2022",   labelY:"low",      name:"Django",       color:"#8e44ad"}
+                                    ,{x:0.86,y:0.60,labelX:"Aug 2022",   labelY:"normal",   name:"ML",           color:"#1abc9c"}
+                                    ,{x:0.95,y:0.50,labelX:"Sep 2022",   labelY:"normal",   name:"DL",           color:"#1abc9c"}
+                                    ,{x:0.50,y:0.12,labelX:"Apr 2022",   labelY:"very low", name:"unity",        color:"#3498db"}
+                                    ,{x:0.46,y:0.19,labelX:"Apr 2022",   labelY:"very low", name:"unreal engine",color:"#3498db"}
                                 ]}
                             />
                         </div>
