@@ -68,7 +68,7 @@ const Home: NextPage = () => {
                             </div>
                             <div style={{width: width,overflow:"hidden"}}>
                                 <p>Various, lately I mainly use Next.js and Flask to create Web Apps!</p>
-                                <p>Rarely ML or DL.</p>
+                                <p>Rarely doing ML and DL</p>
                             </div>
                         </div>
                         <div className={styles.langs}>
@@ -99,10 +99,10 @@ const Home: NextPage = () => {
                                 }}
                                 data={
                                     {
-                                        "Next.js":[70,"#2c3e50"]
-                                        ,"Flask":[15,"#3572A5"]
+                                        "Next.js":[40,"#2c3e50"]
+                                        ,"Flask":[30,"#3572A5"]
                                         ,"React":[5,"#3178c6"]
-                                        ,"Other":10
+                                        ,"Other":25
                                     }
                                 }
                             />
@@ -117,9 +117,16 @@ const Home: NextPage = () => {
                             language={"TypeScript"}
                             className={styles.repo}
                         />
-                        <MiniRepo
+                        {/*<MiniRepo
                             title={"place"}
                             description={"Simple online pixel art editor"}
+                            language={"TypeScript"}
+                            className={styles.repo}
+                            style={{marginTop: 8}}
+                            />*/}
+                        <MiniRepo
+                            title={"chat"}
+                            description={"Self-hosted web application with room and friend functions built with Flask and Next.js"}
                             language={"TypeScript"}
                             className={styles.repo}
                             style={{marginTop: 8}}
@@ -147,6 +154,7 @@ const Home: NextPage = () => {
                                 <Histories.Repo url={"https://github.com/applemango/social"} name={"applemango / social"} lang={"TypeScript"} date={"3 Aug 2022"} />
                                 <Histories.Repo url={"https://github.com/applemango/place"} name={"applemango / place"} lang={"TypeScript"} date={"20 Aug 2022"} />
                                 <Histories.Repo url={"https://github.com/applemango/images_library"} name={"applemango / images_library"} lang={"TypeScript"} date={"17 Sep 2022"} />
+                                <Histories.Repo url={"https://github.com/applemango/chat"} name={"applemango / chat"} lang={"TypeScript"} date={"24 Oct 2022"} />
                             </Histories.History>
                         </Histories>
                     </div>
