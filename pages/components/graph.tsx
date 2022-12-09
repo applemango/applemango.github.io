@@ -26,6 +26,19 @@ const Graph = ({
 }) => {
     const [nowHover, setNowHover] = useState(false)
     const [nowHoverData, setNowHoverData] = useState(0)
+    /*
+        なんかおかしいが、動いてるからよし!
+        過去の自分しっかりしろよ、関数化しろ?
+    */
+    const Py = (p: number) => {
+        return height * (1 - p / (cols.length - 1)) - 12
+    }
+    const Psy = (p: number) => {
+        return height * (p / (cols.length - 1)) + 12
+    }
+    const Px = (p: number) => {
+        return width * (p / (rows.length - 1)) - 8
+    }
     /*const data = [
         {x:0.5,y:0.5,name:"test"}
         ,{x:0.3,y:0.7,name:"lol"}
@@ -61,7 +74,7 @@ const Graph = ({
                 })}
                 { data && data.map((data:any, i:number) => {
                     return <div key={i} style={{
-                        transform: `translateX(${ width * data.x }px) translateY(${ height * (1 - data.y) }px)`
+                        transform: `translateX(${ Px(data.x) }px) translateY(${ Py(data.y) }px)`
                     }} className={`${styles.positionP} ${nowHover && nowHoverData != i ? styles.disabled : ""}`}>
                         <div className={styles.positionP_data}>
                             <div onMouseEnter={() => {
@@ -76,14 +89,14 @@ const Graph = ({
                 })}
                 <div style={{width:width, height:height}} className={`${styles.positionP_hover_line} ${nowHover ? styles.active : ""}`}>
                     <div style={{
-                        transform: `translateY(${height * (1 - data[nowHoverData].y) + 12}px)`
-                        ,width: width * data[nowHoverData].x - 5
+                        transform: `translateY(${ Py(data[nowHoverData].y) + 12}px)`
+                        ,width: Px(data[nowHoverData].x)
                     }}>
                         <p className={styles.positionP_hover_y}>{data[nowHoverData].labelY ? data[nowHoverData].labelY : data[nowHoverData].y}</p>
                     </div>
                     <div style={{
-                        transform: `translateX(${ width * data[nowHoverData].x + 7 }px) translateY(${ height * (1 - data[nowHoverData].y) + 24}px)`
-                        ,height: height * data[nowHoverData].y - 24
+                        transform: `translateX(${ Px(data[nowHoverData].x) + 7 }px) translateY(${ Py(data[nowHoverData].y) + 24}px)`
+                        ,height: Psy(data[nowHoverData].y) - 24
                     }}>
                         <p className={styles.positionP_hover_x}>{data[nowHoverData].labelX ? data[nowHoverData].labelX : data[nowHoverData].x}</p>
                     </div>
