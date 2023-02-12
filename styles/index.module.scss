@@ -30,6 +30,7 @@
     border-radius: 6px;
     overflow: hidden;
     position: relative;
+    background-color: #fff;
 }
 .title_path {
     margin: 0;
@@ -176,6 +177,18 @@
         width: 100% !important;
     }
 }
+
+@media (max-width: 615px) {
+    .main_ {
+        width: calc(100% - 10px);
+    }
+}
+
+/*@media (max-width: 460px) {
+    .langs ~ .langs .lang:first-child {
+        display: none;
+    }
+}*/
 
 .pin {
     max-width: 600px;

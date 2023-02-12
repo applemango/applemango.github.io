@@ -13,15 +13,15 @@ const Graph = ({
     ,height: number
     ,labelX: string
     ,labelY: string
-    ,rows: any[] //x
-    ,cols: any[] //y
+    ,rows: string[] | number[] //x
+    ,cols: string[]  | number[] //y
     ,data: {
         x:number
         ,y:number
         ,name:string
         ,color?: string
-        ,labelX?: any
-        ,labelY?: any
+        ,labelX?: string | number | boolean
+        ,labelY?: string | number | boolean
     }[]
 }) => {
     const [nowHover, setNowHover] = useState(false)

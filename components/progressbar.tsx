@@ -1,13 +1,12 @@
-import { getColor } from "../../lib/languagesColor"
+import { getColor } from "../lib/languagesColor"
 
 import styles from "./styles/progress.module.scss"
 
-type Props = {
-    data: any
-    ,className?: any
-    ,style?: any
-}
-const ProgressBar = ({ data, className, style }:Props) => {
+const ProgressBar = ({ data, className, style }:{
+    data: any,
+    className?: string,
+    style?: React.CSSProperties
+}) => {
     const getData = (l: any, i: number = 0) =>{ return Array.isArray(data[l]) ? data[l][i] : data[l] }
     const getColors = (l: any, i: number = 1) => { return Array.isArray(data[l]) ? data[l][i] : getColor(l) }
     return (

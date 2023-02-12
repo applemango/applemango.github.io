@@ -1,5 +1,5 @@
 import { InfoIcon, RepoIcon } from "@primer/octicons-react"
-import { getColor } from "../../lib/languagesColor"
+import { getColor } from "../lib/languagesColor"
 import styles from "../styles/index.module.scss"
 
 const Histories = ({

@@ -1,4 +1,4 @@
-import { getColor } from "../../lib/languagesColor"
+import { getColor } from "../lib/languagesColor"
 
 import ProgressBar from "./progressbar"
 

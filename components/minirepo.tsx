@@ -1,7 +1,7 @@
 import React from 'react'
 import { RepoIcon } from '@primer/octicons-react'
 
-import { getColor } from "../../lib/languagesColor"
+import { getColor } from "../lib/languagesColor"
 
 import styles from "./styles/minirepo.module.scss"
 
