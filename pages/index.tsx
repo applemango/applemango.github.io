@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                             <p>稀にMLやDLをしている</p>
                         </div>
                         <div style={{width: width,overflow:"hidden"}}>
-                            <p>Various, I'm doing web these days, and write BLOG occasionally</p>
+                            <p>Various, I&apos;m doing web these days, and write BLOG occasionally</p>
                             <p>Rarely doing ML and DL</p>
                         </div>
                     </div>
