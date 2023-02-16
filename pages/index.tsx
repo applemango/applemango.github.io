@@ -50,7 +50,7 @@ const Home: NextPage = () => {
         </div>
     }
     //"rotate(-45deg) skew(10deg, 10deg)"
-    return <div className={ styles.flex } style={{overflow: "hidden"}}>
+    return <div className={ styles.flex } style={{overflow: "hidden", width: "100vw"}}>
         <div style={{position: "absolute", transform: "rotate(-45deg) rotate3d(1, 1, 1, 45deg)",top: 350, right: -150, width: "120vw"}}>
             <ScrollText mouse width={160} text="Want to make something?" />
         </div>
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                             <p>稀にMLやDLをしている</p>
                         </div>
                         <div style={{width: width,overflow:"hidden"}}>
-                            <p>Various, I&apos;m doing web these days, and write BLOG occasionally</p>
+                            <p>Various, I&apos;m doing WEB these days, and write BLOG occasionally</p>
                             <p>Rarely doing ML and DL</p>
                         </div>
                     </div>
