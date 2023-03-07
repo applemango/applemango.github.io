@@ -1,14 +1,13 @@
 import { MarkGithubIcon } from "@primer/octicons-react"
+import Link from "next/link"
 import Footer from "./components/footer"
 import Header from "./components/header"
 import ScrollClipAnimationText from "./components/scrollClipAnimationText"
 import ScrollHorizontal from "./components/scrollHorizontalv2"
 import { Char, ScrollText } from "./components/scrollText"
 import { TitleTextWithSimpleShowAnimation } from "./components/Text"
+import TimeLine from "./components/timeline"
 
-const TimeLine = () => {
-
-}
 type element = React.ReactComponentElement<any>
 type elements = Array<element>
 
@@ -49,7 +48,7 @@ const footerLinks = [{
 }]
 
 const TextNormal = ({children, margin = false}:{
-    children: string | React.ReactElement<any>,
+    children: string | element | elements,
     margin?: boolean
 }) => {
     return <div>
@@ -71,25 +70,33 @@ const Future = () => {
             "about": "/"
         }} />
         <Main>
-            <TitleTextWithSimpleShowAnimation style={{
-                fontSize: "15vw",
-                marginBottom: 24,
-                fontWeight: 500,
-            }} text={"Hello, world!"} />
-            <TitleTextWithSimpleShowAnimation delay={.5} style={{
-                fontSize: "4vw",
-                marginBottom: 24,
-                fontWeight: 500,
-            }} text={"こんなサイト見るだけ損だよ"} />
+            <div style={{
+                //minHeight: "100vh"
+            }}>
+                <TitleTextWithSimpleShowAnimation style={{
+                    fontSize: "15vw",
+                    marginBottom: 24,
+                    fontWeight: 500,
+                }} text={"Hello, world!"} />
+                <TitleTextWithSimpleShowAnimation delay={.5} style={{
+                    fontSize: "4vw",
+                    marginBottom: 24,
+                    fontWeight: 500,
+                }} text={<Link href="https://youtube.com">こんなサイト見るだけ損だよ</Link>} />
+            </div>
             <TextNormal>
+                <>
                 未来のなりたい姿か、...
                 <br />
                 僕にはたった数行しか書けないスペースは少なすぎるからこのsiteに書くよ
                 <br />
                 <br/>
-                とりあえず未来を考える前にこの3年間で何をしたか見るか
+                とりあえず未来を考える前にこの3年間で何をしたか見るか</>
             </TextNormal>
             <ScrollHorizontal>
+                <TimeLine />
+            </ScrollHorizontal>
+            {/*<ScrollHorizontal>
                 <div>
                     
                 </div>
@@ -111,7 +118,7 @@ const Future = () => {
                     }}>
                     </div>)}
                 </div>
-            </ScrollHorizontal>
+                </ScrollHorizontal>*/}
             <div>
                 ではまたいつか
 
