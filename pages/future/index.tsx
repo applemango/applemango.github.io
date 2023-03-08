@@ -74,17 +74,83 @@ const Future = () => {
                 //minHeight: "100vh"
             }}>
                 <TitleTextWithSimpleShowAnimation style={{
-                    fontSize: "15vw",
+                    fontSize: "8vw",
                     marginBottom: 24,
                     fontWeight: 500,
-                }} text={"Hello, world!"} />
-                <TitleTextWithSimpleShowAnimation delay={.5} style={{
+                    display: "flex",
+                    justifyContent: "center",
+                }} text={<>What I<span style={{
+                    width: "2vw"
+                }} /><span style={{
+                    color: "#9b59b6"
+                }}> want</span><span style={{
+                    width: "2vw"
+                }} />to be</>} />
+                {/*<TitleTextWithSimpleShowAnimation delay={.5} style={{
                     fontSize: "4vw",
                     marginBottom: 24,
                     fontWeight: 500,
-                }} text={<Link href="https://youtube.com">こんなサイト見るだけ損だよ</Link>} />
+                }} text={<Link href="https://youtube.com">最初に言っとく,こんなサイト見るだけ時間の無駄だよ</Link>} />*/}
             </div>
-            <TextNormal>
+            <div style={{
+                width: "80%",
+                margin: "0 auto",
+            }}>
+            {/*<ScrollClipAnimationText text={"ふうっ"} />
+            <ScrollClipAnimationText text={"ふうっ"} />
+            <ScrollClipAnimationText text={"ふうっ"} />
+            <ScrollClipAnimationText text={"ふうっ"} />*/}
+            <h1 style={{
+                fontSize: 48,
+                fontWeight: 300,
+                color: "#252525"
+            }}>What I want to be the future</h1>
+            <p style={{
+                fontSize: 20,
+                fontWeight: 300,
+                color: "#555",
+                marginBottom: 0,
+            }}>もう卒業式ですよ、早い、ほんと早い、1年と2年の頃がつい昨日のように感じる</p>
+            <p style={{
+                fontSize: 20,
+                fontWeight: 300,
+                color: "#555",
+                margin: 0,
+            }}>修学旅行なんて9ヶ月前、信じられる?、信じれない本当に、もっと信じられないのはもう冬休みが終わって3ヶ月経とうとしている事</p>
+            <p style={{
+                fontSize: 20,
+                fontWeight: 300,
+                color: "#555",
+                margin: 0,
+            }}>義務教育期間3,000日、残り0日、中学校生活1000日あまり、残り0日、中学生というインパクトのある肩書きがなくなり高校生というありふれた肩書きになるんだよ、まぁ泣いても笑ってもこれが最後だからこれくらいでとどめておこう</p>
+
+            <p style={{
+                fontSize: 20,
+                fontWeight: 300,
+                color: "#555",
+                marginBottom: 0,
+            }}>本題に行くけど、未来のなりたい姿と言っても明確に決まっていたら進路に苦労しないんだよ、それに最終的に行く着く先は死だよ(諸説あり)</p>
+            <p style={{
+                fontSize: 20,
+                fontWeight: 300,
+                color: "#555",
+                margin: 0,
+            }}>そして1年の目標も"色々する"などと抽象化した人に長期的な目標が立てれるのかね</p>
+
+
+
+            <h1 style={{
+                fontSize: 48,
+                fontWeight: 300,
+                color: "#252525"
+            }}>Looking back</h1>
+            {/*<TitleTextWithSimpleShowAnimation delay={.5} style={{
+                fontSize: "3vw",
+                marginBottom: 24,
+                fontWeight: 500,
+            }} text={<Link href="https://youtube.com">Lsooking back</Link>} />*/}
+            </div>
+            {/*<TextNormal>
                 <>
                 未来のなりたい姿か、...
                 <br />
@@ -92,10 +158,35 @@ const Future = () => {
                 <br />
                 <br/>
                 とりあえず未来を考える前にこの3年間で何をしたか見るか</>
-            </TextNormal>
+            </TextNormal>*/}
             <ScrollHorizontal>
+                <div style={{
+                    margin: "0 0vw 0 10vw"
+                }}>
                 <TimeLine />
+                </div>
             </ScrollHorizontal>
+            <div style={{
+                width: "80%",
+                margin: "0 auto",
+            }}>
+            <TitleTextWithSimpleShowAnimation delay={.5} style={{
+                    fontSize: "4vw",
+                    marginBottom: 24,
+                    fontWeight: 500,
+                }} text={<Link href="https://youtube.com">Reflection</Link>} />
+            <p>なんか最初の2年何もしてなくね?</p>
+            <p>まあいいや</p>
+            <div>
+                ではまたいつか
+
+                それにしてもよく許可してくれたな、QRコード書くの
+                <br />
+                最後に、僕を信用しQRコードを書くことを許してくれた寛大な先生方に感謝します (海外のスタートアップとかによくある文言)
+                <br />
+                それとごめん、多分3年間で何かをやらかしてる
+            </div>
+            </div>
             {/*<ScrollHorizontal>
                 <div>
                     
@@ -119,10 +210,36 @@ const Future = () => {
                     </div>)}
                 </div>
                 </ScrollHorizontal>*/}
-            <div>
-                ではまたいつか
-
-                それにしてもよく許可してくれたな、QRコード書くの
+            <div style={{
+                width: "80%",
+                margin: "0 auto",
+            }}>
+            <TitleTextWithSimpleShowAnimation style={{
+                    fontSize: "15vw",
+                    marginBottom: 24,
+                    fontWeight: 500,
+                }} text={"またいつか"} />
+                <div style={{
+                    display: "flex",
+                    alignItems: "center"
+                }}>
+                <TitleTextWithSimpleShowAnimation delay={.2} style={{
+                    fontSize: "4vw",
+                    marginBottom: 24,
+                    fontWeight: 500,
+                }} text={"五年後"} />
+                <TitleTextWithSimpleShowAnimation delay={1.6} style={{
+                    fontSize: "4vw",
+                    marginBottom: 24,
+                    fontWeight: 500,
+                }} text={"あるいは百年後、"} />
+                <TitleTextWithSimpleShowAnimation delay={3} style={{
+                    fontSize: "4vw",
+                    marginBottom: 24,
+                    fontWeight: 500,
+                }} text={"または永遠に"} />
+                </div>
+                <p>令和6年 3月 14日</p>
             </div>
         </Main>
         <Footer

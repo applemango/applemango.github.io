@@ -28,7 +28,7 @@ export const TitleTextWithSimpleShowAnimation = ({text, style, animation, delay}
     return <motion.div
     initial="offscreen"
     whileInView="onscreen"
-    viewport={{once: true, amount: 0.8, /*margin: "300px"*/ margin: "600px"}}>
+    viewport={{once: false, amount: 0, /*margin: "300px"*/}}>
     <motion.div
         variants={Animation}>
         <h1 style={Object.assign({

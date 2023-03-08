@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import cas from "./scss/any.module.scss"
 
 const createTimesArray = () => {
@@ -46,6 +47,7 @@ const data = [
     {color: "#f5f5f5", start: 12, end: 22, line: 4, name: "黎明期に入る"},
     {color: "#f5f5f5", start: 13, end: 15, line: 6, name: "学校を休む"},
     {color: "#f5f5f5", start: 13, end: 25, line: 5, name: "人生を考え始める"},
+    {color: "#f5f5f5", start: 23, end: 25, line: 5, name: "時間大事にで生きようと思う"},
 
     {color: "#f5f5f5", start: 18, end: 20, line: 1, name: "scratch"},
     {color: "#f5f5f5", start: 21, end: 22, line: 1, name: "言語を作る"},
@@ -54,7 +56,7 @@ const data = [
     {color: "#f5f5f5", start: 22, end: 25, line: 2, name: "HTML CSSを始める"},
     {color: "#f5f5f5", start: 23, end: 25, line: 3, name: "ROR, djangoに手を出す"},
 
-    {color: "#f5f5f5", start: 28, end: 37, line: 2, name: "Next.jsを始める"},
+    {color: "#f5f5f5", start: 26, end: 37, line: 2, name: "Next.jsを始める"},
     {color: "#f5f5f5", start: 28, end: 32, line: 3, name: "Flaskを始める"},
     {color: "#f5f5f5", start: 33, end: 37, line: 3, name: "速度を求めてGin, FastAPI, Actixに浮気する"},
 
@@ -116,6 +118,7 @@ const TimeLine = () => {
         backgroundColor: "#fff",
         border: "1px solid #ddd",
         borderBottom: "none",
+        borderLeft: "none",
     }}>
         <div style={{
             display: "flex",
@@ -184,7 +187,24 @@ const TimeLine = () => {
 
                 "--hover-color": "#ddd",
                 transition: "all 0.3s ease",
-            } as React.CSSProperties}>
+            } as React.CSSProperties} /*variants={{
+                offscreen: {
+                    y: 100,
+                    opacity: 0
+                },
+                onscreen: {
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                        type: "spring",
+                        duration: .2,
+                        delay: 0
+                    }
+                }
+            }}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{once: false, amount: 0}}*/>
                 <p style={{
                     fontSize: "2vh",
                     color: "#666",
@@ -212,7 +232,24 @@ const TimeLine = () => {
 
                 "--hover-color": "#ddd",
                 transition: "all 0.3s ease",
-            } as React.CSSProperties}>
+            } as React.CSSProperties} /*variants={{
+                offscreen: {
+                    y: 100,
+                    opacity: 0
+                },
+                onscreen: {
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                        type: "spring",
+                        duration: .2,
+                        delay: 0
+                    }
+                }
+            }}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{once: false, amount: 0}}*/>
                 <p style={{
                     fontSize: "2vh",
                     color: "#666",

@@ -59,7 +59,7 @@ const ScrollHorizontal = ({children}:{
         const x = w - h
         setElementEndPositionY(elementWidth - window.innerHeight - x)
         setElementEndPositionX(elementWidth - window.innerWidth)
-    },[scrollPosition, elementWidth, elementTop, windowSize])
+    },[elementWidth, elementTop, windowSize])
     return <div ref={ref} style={{
         height: process.browser ? elementWidth - (window.innerWidth - window.innerHeight) : elementWidth,
         width: "fit-content",
@@ -67,6 +67,7 @@ const ScrollHorizontal = ({children}:{
         <div style={Object.assign({
             width: "fit-content",
             height: "fit-content",
+            willChange: "transform",
         }, (horizontal &&  !end) && {
             position: "fixed",
             top: 0,
