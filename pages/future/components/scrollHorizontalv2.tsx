@@ -26,6 +26,13 @@ const ScrollHorizontal = ({children}:{
         })
     }, [windowSize])*/
     useEffect(()=> {
+        if(!process.browser)
+            return
+        window.scrollTo({
+            top: 0
+        })
+    },[])
+    useEffect(()=> {
         if(!ref?.current)
             return
         const h = window.innerHeight
@@ -33,7 +40,7 @@ const ScrollHorizontal = ({children}:{
         const x = w - h
         setElementWidth(ref.current.offsetWidth)
         setElementTop(ref.current.getBoundingClientRect().top)
-    },[ref, windowSize])
+    },[ref])
     useEffect(()=> {
         const h = window.innerHeight
         const w = window.innerWidth
@@ -50,7 +57,7 @@ const ScrollHorizontal = ({children}:{
         setHorizontal(true)
 
         setElementTransformX(elementWidth - pnr)
-    },[scrollPosition, elementWidth, elementTop, windowSize])
+    },[scrollPosition, elementWidth, elementTop])
     useEffect(()=> {
         if(!ref?.current)
             return

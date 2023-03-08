@@ -126,7 +126,7 @@ const TimeLine = () => {
             width: "fit-content",
             height: "fit-content",
         }}>
-            {times.map((time)=> <div style={{
+            {times.map((time, i)=> <div key={i} style={{
 
             }}>
                 <div style={{
@@ -154,7 +154,7 @@ const TimeLine = () => {
                     display: "flex",
                     flexWrap: "nowrap",
                 }}>
-                    {time.data.map((month)=> <div style={{
+                    {time.data.map((month, j)=> <div key={j} style={{
                         padding: "4px 8px",
                         width: gridWight,
                         borderRight: "1px solid #ddd",
@@ -172,7 +172,7 @@ const TimeLine = () => {
             position: "relative",
             height: "calc(100% - 94px)"
         }}>
-            {data.map((item)=> <div className={cas.timeline_data_item} style={{
+            {data.map((item, i)=> <div key={i} className={cas.timeline_data_item} style={{
                 marginTop: 12,
                 height: "calc(100% / 6 - 24px)",
                 width: (item.end - item.start + 1) * gridWight,
@@ -217,7 +217,7 @@ const TimeLine = () => {
                     fontWeight: 300,
                 }}></p>
             </div>)}
-            {points.map((item)=> <div className={cas.timeline_data_item} style={{
+            {points.map((item, i)=> <div key={i} className={cas.timeline_data_item} style={{
                 borderRadius: "100%",
                 marginTop: 12,
                 height: "calc(100% / 6 - 24px)",
