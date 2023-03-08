@@ -63,8 +63,8 @@ const data = [
     {color: "#f5f5f5", start: 29, end: 35, line: 5, name: "MANABi DX QUEST"},
     {color: "#f5f5f5", start: 33, end: 35, line: 5, name: "Goldをもらうためにやる"},
 
-    {color: "#f5f5f5", start: 27, end: 33, line: 4, name: "Machine Learning, DLをやる"},
-    {color: "#f5f5f5", start: 34, end: 37, line: 4, name: "diffusion modelやLLMsに興味を持つ"},
+    {color: "#f5f5f5", start: 29, end: 33, line: 4, name: "Machine Learning, DLをやる"},
+    {color: "#f5f5f5", start: 34, end: 37, line: 4, name: "diffusion modelやLLMに興味を持つ"},
 
     {color: "#f5f5f5", start: 30, end: 37, line: 1, name: "ブログを始める"},
     {color: "#f5f5f5", start: 33, end: 37, line: 1, name: "少しずつ伸びてきた (多い時で一日50pv)"},
@@ -92,7 +92,7 @@ const points = [
 
 const yearComment = {
     2020: "なんかあんまり記憶にないな、でも昨日のよう",
-    2021: "記憶障害かな?",
+    2021: "あまり鮮明な記憶がないな、けど終了式を鮮明に覚えてる",
     2022: "記憶が戻ってきた",
     2023: "一年ってこんなに早かった?"
 }
@@ -119,6 +119,7 @@ const TimeLine = () => {
         border: "1px solid #ddd",
         borderBottom: "none",
         borderLeft: "none",
+        borderRight: "none"
     }}>
         <div style={{
             display: "flex",

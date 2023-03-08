@@ -82,7 +82,6 @@ const Future = () => {
                 }} text={<>What I<span style={{
                     width: "2vw"
                 }} /><span style={{
-                    color: "#9b59b6"
                 }}> want</span><span style={{
                     width: "2vw"
                 }} />to be</>} />
@@ -135,7 +134,7 @@ const Future = () => {
                 fontWeight: 300,
                 color: "#555",
                 margin: 0,
-            }}>そして1年の目標も"色々する"などと抽象化した人に長期的な目標が立てれるのかね</p>
+            }}>そして1年の目標も"色々する"などと抽象化した人に長期的な目標が立てれるのかね、まぁ御託を並べるのはこのくらいにして一度3年間を振り返るか</p>
 
 
 
@@ -161,7 +160,7 @@ const Future = () => {
             </TextNormal>*/}
             <ScrollHorizontal>
                 <div style={{
-                    margin: "0 0vw 0 10vw"
+                    margin: "0 10vw 0 10vw"
                 }}>
                 <TimeLine />
                 </div>
@@ -170,22 +169,103 @@ const Future = () => {
                 width: "80%",
                 margin: "0 auto",
             }}>
-            <TitleTextWithSimpleShowAnimation delay={.5} style={{
-                    fontSize: "4vw",
-                    marginBottom: 24,
-                    fontWeight: 500,
-                }} text={<Link href="https://youtube.com">Reflection</Link>} />
-            <p>なんか最初の2年何もしてなくね?</p>
-            <p>まあいいや</p>
-            <div>
-                ではまたいつか
+                <h2 style={{
+                    fontSize: 42,
+                    fontWeight: 300,
+                    color: "#252525"
+                }}>The apps I made</h2>
+                <div style={{
+                    borderBottom: "1px solid #eee",
+                }}>
+                    {(new Array(5)).fill(0).map((_, i) => <div key={i} style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        borderTop: "1px solid #eee",
+                        padding: "4px 8px",
+                        alignItems: "baseline"
+                    }}>
+                        <div style={{width: "20%"}}>
+                            <p style={{
+                                fontSize: 20,
+                                fontWeight: 300,
+                                color: "#555",
+                                lineHeight: 1,
+                            }}>example</p>
+                        </div>
+                        <div style={{width: "60%"}}>
+                            <p style={{
+                                fontSize: 20,
+                                fontWeight: 300,
+                                color: "#555",
+                                lineHeight: 1,
+                            }}>example project</p>
+                        </div>
+                        <div style={{width: "20%"}}>
+                            <p style={{
+                                fontSize: 20,
+                                fontWeight: 300,
+                                color: "#555",
+                                lineHeight: 1,
+                            }}>2023 03</p>
+                        </div>
+                    </div>)}
+                </div>
+                {/*<TitleTextWithSimpleShowAnimation delay={.5} style={{
+                        fontSize: "4vw",
+                        marginBottom: 24,
+                        fontWeight: 500,
+                    }} text={<Link href="https://youtube.com">Reflection</Link>} />*/}
+                <h1 style={{
+                    fontSize: 48,
+                    fontWeight: 300,
+                    color: "#252525"
+                }}>What I want to be the future</h1>
+                <p style={{
+                    fontSize: 20,
+                    fontWeight: 300,
+                    color: "#555",
+                    marginBottom: 0,
+                }}>なんか最初の2年何もしてなくね?、22, 23と比べて20, 21スカスカすぎない？</p>
+                <p style={{
+                    fontSize: 20,
+                    fontWeight: 300,
+                    color: "#555",
+                }}>(一応言い訳するとGameで上位0.0001%(19/13000000)とかになったり色々したけどそんな事書いても意味ないし)</p>
+                <p style={{
+                    fontSize: 20,
+                    fontWeight: 300,
+                    color: "#555",
+                    margin: 0,
+                }}>まぁ過去の自分を殴るのもこれくらいにして、タイトル回収でもして終わるか、ここまで読んだ人何人くらいだろ2人ぐらいか?</p>
 
-                それにしてもよく許可してくれたな、QRコード書くの
-                <br />
-                最後に、僕を信用しQRコードを書くことを許してくれた寛大な先生方に感謝します (海外のスタートアップとかによくある文言)
-                <br />
-                それとごめん、多分3年間で何かをやらかしてる
-            </div>
+                <p style={{
+                    fontSize: 64,
+                    fontWeight: 300,
+                    color: "#555",
+                    margin: 0,
+                }}>ここら辺を適当に書き直す</p>
+                <p style={{
+                    fontSize: 16,
+                    fontWeight: 300,
+                    color: "#555",
+                    margin: 0,
+                }}>ちゃんと上のタイムライン的なのの未来版を作るつもり</p>
+
+                <p style={{
+                    fontSize: 24,
+                    fontWeight: 300,
+                    color: "#555",
+                }}>ビジョンを持ってソサイエティのイシューやプログレム、人々のコモンセンスをチェンジできるようなイノベーションのイニシアチブをコンセンサスにとり、アジャイルにアビリティを駆使し、ファクトベースにPDCAを回し、コンプライアンスを守り、アピアランスやKPIだけを意識せず、ノウハウやコアコンピタスを取得しプロフィットを得たい</p>
+
+                {/*<div>
+                    ではまたいつか
+
+                    それにしてもよく許可してくれたな、QRコード書くの
+                    <br />
+                    最後に、僕を信用しQRコードを書くことを許してくれた寛大な先生方に感謝します (海外のスタートアップとかによくある文言)
+                    <br />
+                    それとごめん、多分3年間で何かをやらかしてる
+                </div>*/}
             </div>
             {/*<ScrollHorizontal>
                 <div>
@@ -214,7 +294,7 @@ const Future = () => {
                 width: "80%",
                 margin: "0 auto",
             }}>
-            <TitleTextWithSimpleShowAnimation style={{
+                <TitleTextWithSimpleShowAnimation style={{
                     fontSize: "15vw",
                     marginBottom: 24,
                     fontWeight: 500,
@@ -240,6 +320,12 @@ const Future = () => {
                 }} text={"または永遠に"} />
                 </div>
                 <p>令和6年 3月 14日</p>
+                <p style={{
+                fontSize: 20,
+                fontWeight: 300,
+                color: "#555",
+                margin: 0,
+                }}>一応三年後更新しようと思ってる</p>
             </div>
         </Main>
         <Footer

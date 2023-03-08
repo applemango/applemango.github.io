@@ -18,13 +18,13 @@ const ScrollHorizontal = ({children}:{
     const [elementEndPositionX, setElementEndPositionX] = useState(0)
     const windowSize = useWindowSize();
     const ref = useRef<any>(null)
-    useEffect(() => {
+    /*useEffect(() => {
         if(!process.browser)
             return
         window.scrollTo({
             top: 0
         })
-    }, [windowSize])
+    }, [windowSize])*/
     useEffect(()=> {
         if(!ref?.current)
             return
