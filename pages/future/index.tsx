@@ -2,6 +2,7 @@ import { MarkGithubIcon } from "@primer/octicons-react"
 import Link from "next/link"
 import Footer from "./components/footer"
 import Header from "./components/header"
+import Projects from "./components/projects"
 import ScrollClipAnimationText from "./components/scrollClipAnimationText"
 import ScrollHorizontal from "./components/scrollHorizontalv2"
 import { Char, ScrollText } from "./components/scrollText"
@@ -74,7 +75,7 @@ const Future = () => {
                 //minHeight: "100vh"
             }}>
                 <TitleTextWithSimpleShowAnimation style={{
-                    fontSize: "8vw",
+                    fontSize: "12vw",
                     marginBottom: 24,
                     fontWeight: 500,
                     display: "flex",
@@ -174,42 +175,12 @@ const Future = () => {
                     fontWeight: 300,
                     color: "#252525"
                 }}>The apps I made</h2>
-                <div style={{
-                    borderBottom: "1px solid #eee",
-                }}>
-                    {(new Array(5)).fill(0).map((_, i) => <div key={i} style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        borderTop: "1px solid #eee",
-                        padding: "4px 8px",
-                        alignItems: "baseline"
-                    }}>
-                        <div style={{width: "20%"}}>
-                            <p style={{
-                                fontSize: 20,
-                                fontWeight: 300,
-                                color: "#555",
-                                lineHeight: 1,
-                            }}>example</p>
-                        </div>
-                        <div style={{width: "60%"}}>
-                            <p style={{
-                                fontSize: 20,
-                                fontWeight: 300,
-                                color: "#555",
-                                lineHeight: 1,
-                            }}>example project</p>
-                        </div>
-                        <div style={{width: "20%"}}>
-                            <p style={{
-                                fontSize: 20,
-                                fontWeight: 300,
-                                color: "#555",
-                                lineHeight: 1,
-                            }}>2023 03</p>
-                        </div>
-                    </div>)}
-                </div>
+                <Projects />
+                <p style={{
+                    fontSize: 12,
+                    fontWeight: 300,
+                    color: "#555",
+                }}>本当はもっと色々あるけど色々と事情が...</p>
                 {/*<TitleTextWithSimpleShowAnimation delay={.5} style={{
                         fontSize: "4vw",
                         marginBottom: 24,
@@ -218,7 +189,8 @@ const Future = () => {
                 <h1 style={{
                     fontSize: 48,
                     fontWeight: 300,
-                    color: "#252525"
+                    color: "#252525",
+                    
                 }}>What I want to be the future</h1>
                 <p style={{
                     fontSize: 20,
@@ -243,13 +215,7 @@ const Future = () => {
                     fontWeight: 300,
                     color: "#555",
                     margin: 0,
-                }}>ここら辺を適当に書き直す</p>
-                <p style={{
-                    fontSize: 16,
-                    fontWeight: 300,
-                    color: "#555",
-                    margin: 0,
-                }}>ちゃんと上のタイムライン的なのの未来版を作るつもり</p>
+                }}>未来のなりたい姿</p>
 
                 <p style={{
                     fontSize: 24,
