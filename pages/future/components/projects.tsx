@@ -7,8 +7,8 @@ import a from "./scss/any.module.scss"
 const projects = [
     {name: "abc.osaka", description: "ブログ", date: "2023 03", img: "/img/b.png", link: "https://abc.osaka/"},
     {name: "kanji puzzle", description: "漢字のパズルとか", date: "2023 03", img: "/img/a.png", link: "https://git.abc.osaka/kanji-puzzle/"},
-    {name: "twitter clone", description: "twitterのclone", date: "2023 03", img: "/img/d.png", link: "https://github.com/applemango/twitter-clone"},
-    {name: "image library", description: "画像を管理するやつ", date: "2023 03", img: "/img/c.png", link: "https://github.com/applemango/image_library"},
+    {name: "twitter clone", description: "twitterのclone", date: "2023 03", img: "/img/d.png", link: "https://github.com/applemango/twitter_clone"},
+    {name: "image library", description: "画像を管理するやつ", date: "2023 03", img: "/img/c.png", link: "https://github.com/applemango/images_library"},
     {name: "Github", description: "github account", date: "2023 03", img: "/img/noimage.png", link: "https://github.com/applemango"},
     {name: "Scratch", description: "scratch account", date: "2023 03", img: "/img/noimage.png", link: "https://scratch.mit.edu/users/_applemango_"},
 ]
