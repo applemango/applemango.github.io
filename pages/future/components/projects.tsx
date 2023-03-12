@@ -5,12 +5,12 @@ import Img from "./img"
 import a from "./scss/any.module.scss"
 
 const projects = [
-    {name: "abc.osaka", description: "ブログ", date: "2023 03", img: "/img/b.png", link: "https://abc.osaka/"},
-    {name: "kanji puzzle", description: "漢字のパズルとか", date: "2023 03", img: "/img/a.png", link: "https://git.abc.osaka/kanji-puzzle/"},
-    {name: "twitter clone", description: "twitterのclone", date: "2023 03", img: "/img/d.png", link: "https://github.com/applemango/twitter_clone"},
-    {name: "image library", description: "画像を管理するやつ", date: "2023 03", img: "/img/c.png", link: "https://github.com/applemango/images_library"},
-    {name: "Github", description: "github account", date: "2023 03", img: "/img/noimage.png", link: "https://github.com/applemango"},
-    {name: "Scratch", description: "scratch account", date: "2023 03", img: "/img/noimage.png", link: "https://scratch.mit.edu/users/_applemango_"},
+    {name: "abc.osaka", description: "ブログ", date: "2022 11", img: "/img/b.png", link: "https://abc.osaka/"},
+    {name: "kanji puzzle", description: "漢字のパズルとか", date: "2023 02", img: "/img/a.png", link: "https://git.abc.osaka/kanji-puzzle/"},
+    {name: "twitter clone", description: "twitterのclone", date: "2022 12", img: "/img/d.png", link: "https://github.com/applemango/twitter_clone"},
+    {name: "image library", description: "画像を管理するやつ", date: "2022 09", img: "/img/c.png", link: "https://github.com/applemango/images_library"},
+    {name: "Github", description: "github account", date: "2021 06", img: "/img/noimage.png", link: "https://github.com/applemango"},
+    {name: "Scratch", description: "scratch account", date: "2021 11", img: "/img/noimage.png", link: "https://scratch.mit.edu/users/_applemango_"},
 ]
 
 const generateRandomChar = () => {
@@ -62,13 +62,19 @@ const Projects = () => {
         {projects.map((data, i) => <div key={i} style={{
             position: "absolute",
             width: "70%",
-            maxWidth: 700,
             height: "100%",
+            maxWidth: 700,
             right: 0,
             opacity: 0,
-            scale: 0.9
+            scale: 0.9,
+            display: "flex",
+            alignItems: "center",
         }} className={getClassName(i, "image", randomClassName)}>
-            <Img src={data.img} />
+            <div style={{
+                height: "fit-content",
+            }}>
+                <Img src={data.img} />
+            </div>
         </div>)}
         {projects.map((data, i) => <div key={i} style={{
             display: "flex",
