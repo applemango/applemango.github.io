@@ -92,15 +92,16 @@ const Home: NextPage = () => {
                             }}
                             data={
                                 {
-                                    "Python":30
-                                    ,"TypeScript":20
-                                    ,"Rust":15
+                                    "TypeScript":25
+                                    ,"Rust":20
                                     ,"Go":10
-                                    ,"SCSS":5
-                                    ,"JavaScript":2.5
-                                    ,"CSS":2.5
-                                    ,"HTML":2.5
-                                    ,"Other":12.5
+                                    ,"Python":10
+                                    ,"Elixir":10
+                                    ,"SCSS":3
+                                    ,"JavaScript":1.5
+                                    ,"CSS":1.0
+                                    ,"HTML":0.5
+                                    ,"Other":19
                                 }
                             }
                         />
@@ -133,10 +134,11 @@ const Home: NextPage = () => {
                             }}
                             data={
                                 {
-                                    "Flask":[40,"#3572a5"]
-                                    ,"Actix":[30,"#dea584"]
-                                    ,"Gin":[15,"#00add8"]
-                                    ,"Other":15
+                                    "Actix":[30,"#dea584"]
+                                    ,"Phoenix":[15,"#dc5d35"]
+                                    ,"Flask":[15,"#3572a5"]
+                                    ,"Gin":[10,"#00add8"]
+                                    ,"Other":25
                                 }
                             }
                         />
