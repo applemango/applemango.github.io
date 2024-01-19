@@ -179,6 +179,9 @@
 }
 
 @media (max-width: 615px) {
+    .background_text {
+        display: none;
+    }
     .main_ {
         width: 100%;
         border: none;
