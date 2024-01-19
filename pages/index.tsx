@@ -43,7 +43,7 @@ const Home: NextPage = () => {
     const Links = () => {
         return <div className={styles.twoLink} style={{marginBottom:12}}>
             { sections
-            .filter((_section: string, i: number) => section != i)    
+            .filter((_section: string, i: number) => section != i)
             .map((section: string, i: number) => <p key={i} className={styles.title_path}>
                 <a className={`${animations.underline} ${animations.simple}`} style={{cursor:"pointer"}} onClick={() => setSection(sections.indexOf(section))}>{section}</a>
             </p>)}
@@ -51,9 +51,9 @@ const Home: NextPage = () => {
     }
     //"rotate(-45deg) skew(10deg, 10deg)"
     return <div className={ styles.flex } style={{overflow: "hidden", width: "100vw"}}>
-        <div style={{position: "absolute", transform: "rotate(-45deg) rotate3d(1, 1, 1, 45deg)",top: 350, right: -150, width: "120vw"}}>
+        {/*<div style={{position: "absolute", transform: "rotate(-45deg) rotate3d(1, 1, 1, 45deg)",top: 350, right: -150, width: "120vw"}}>
             <ScrollText mouse width={160} text="Want to make something?" />
-        </div>
+        </div>*/}
         <Heads title={"AppleMango"} description={"AppleMango - Web系をやってるたまにブログを書く色々やりたいと思ってる人"} />
         <div className={ styles.main }>
             <div className={`${styles.main_} ${styles.section}`}>
